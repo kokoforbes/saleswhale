@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+	--white: #FFFFFF;
+	--primary-blue: #0688FA;
+	--secondary-blue: #EFF8FF;
+	--light-pink: #FFF5F5;
+}
+
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+.hero__img {
+  max-width: 100%;
+  width: 268px;
+}
+
+.container {
+  padding: 0 26px;
+	margin: 0 auto;
+  max-width: 100%;
+  width: 1440px;
+}
+
+/* Nav styling */
+nav {
+	background-color: #FFFFFF;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+  z-index: 100;
+  padding: 25px 27px;
+  text-align: left;
+}
+
+
+.flex {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.btn {
+	background-color: transparent;
+	display: inline-block;
+	color: #000000;
+	cursor: pointer;
+	padding: 15px 25px;
+	letter-spacing: 2px;
+  width: 272px;
+  height: 49px;
+  border-radius: 5px;
+}
+
+.btn--shadow {
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (min-width: 768px){
+  body {
+    text-align: unset;
+  }
+}
+
+@media screen and (min-width: 1440px){
+  
+}
