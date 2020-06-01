@@ -6,6 +6,12 @@
   margin: 0;
 }
 
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
 :root {
   --white: #ffffff;
   --primary-blue: #0688fa;
@@ -53,7 +59,6 @@ nav {
 .btn {
   background-color: transparent;
   display: inline-block;
-  color: #000000;
   cursor: pointer;
   border: none;
   padding: 15px 25px;
@@ -61,13 +66,12 @@ nav {
   width: 272px;
   height: 49px;
   border-radius: 5px;
-  margin-bottom: 22px;
 }
 
 .flex {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -126,8 +130,12 @@ nav {
   color: var(--egg-blue);
 }
 
-.culture h2 {
+.culture__title {
   padding: 0 0 13px 0;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 31px;
+  color: var(--blue-black);
 }
 
 .mission img {
@@ -137,6 +145,7 @@ nav {
 .join__us {
   margin: 23px 0 0 0;
   color: var(--blue-black);
+  padding-top: 10px;
 }
 
 .join__us button {
@@ -152,13 +161,28 @@ nav {
   padding: 89px 0 30px 0;
 }
 
+.btn--team {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--white);
+}
+
 .btn--demo {
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
   margin: 33px 0;
+  background-color: var(--white);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  color: var(--blue-black);
 }
 
 .btn--use {
-  border: 1px solid red;
+  border: 1px solid var(--white);
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
 }
 
 .box {
@@ -166,7 +190,7 @@ nav {
   border: 1px solid #e5e5e5;
   box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.08);
   border-radius: 5px;
-  margin: 20px 0 17px 0;
+  margin-top: 20px;
   width: 271px;
   height: 199px;
   text-align: center;
@@ -174,7 +198,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 17px;
+  padding-bottom: 17px;
   line-height: 34px;
   color: var(--blue-black);
 }
@@ -196,6 +220,57 @@ nav {
   width: 272px;
   height: 145.79px;
   margin: 20px auto;
+}
+
+.offices {
+  background-image: url(./images/Vector-19-mobile.svg);
+  background-repeat: no-repeat;
+  background-position-y: 100%;
+  background-size: 100%;
+}
+
+.offices_title {
+  padding-top: 33px;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 31px;
+  text-align: center;
+  color: var(--blue-black);
+  margin-bottom: 20px;
+}
+
+.investors {
+  background-image: url(./images/Mask-Group-mobile.svg);
+  background-repeat: no-repeat;
+  background-position-y: 0%;
+  padding-bottom: 27px;
+}
+
+.investors_title {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 31px;
+  color: var(--blue-black);
+  text-align: center;
+  padding: 81px 0 0 0;
+}
+
+.future {
+  background-image: url(./images/Vector-18.png);
+  background-repeat: no-repeat;
+}
+
+.future__title {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  color: var(--white);
+  padding-top: 61px;
+}
+
+.footer-logo {
+  align-self: flex-start;
 }
 
 .top--level {
@@ -280,6 +355,20 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .offices {
+    background-image: url(./images/Vector-19-tablet.png);
+  }
+
+  .investors {
+    background-image: url(./images/Mask-Group-tablet.svg);
+    background-repeat: no-repeat;
+  }
+
+  .future {
+    background-image: url(./images/bg-tablet.png);
+    background-repeat: no-repeat;
   }
 
   .footer__list {
