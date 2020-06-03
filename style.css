@@ -22,6 +22,10 @@ a {
   --grey-scale: #f4f4f4;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: normal;
@@ -157,6 +161,76 @@ nav {
   text-align: center;
 }
 
+.timeline {
+  background: #eff8ff;
+  margin-top: 35px;
+  padding-bottom: 50px;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 3px;
+  background-color: blue;
+  top: 0;
+  bottom: 0;
+  left: 35%;
+}
+
+.entry {
+  clear: both;
+  text-align: left;
+  position: relative;
+}
+
+.left {
+  float: left;
+  width: 30%;
+  padding-right: 5px;
+  position: relative;
+  padding-top: 77px;
+  margin-left: 39px;
+}
+
+.entry::after {
+  content: '';
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  left: 26%;
+  background-color: white;
+  background: url('./images/mail.png');
+  border: 1px solid #ffffff;
+  top: 67px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.date {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--primary-blue);
+}
+
+.right {
+  float: right;
+  width: 55%;
+  line-height: 24px;
+  padding-top: 77px;
+}
+
+.right__text {
+  width: 157px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--blue-black);
+}
+
 .future {
   padding: 89px 0 30px 0;
 }
@@ -227,6 +301,7 @@ nav {
   background-repeat: no-repeat;
   background-position-y: 100%;
   background-size: 100%;
+  position: relative;
 }
 
 .offices_title {
@@ -258,6 +333,8 @@ nav {
 .future {
   background-image: url(./images/Vector-18.png);
   background-repeat: no-repeat;
+  padding-bottom: 63px;
+  background-size: 100% 100%;
 }
 
 .future__title {
@@ -271,12 +348,13 @@ nav {
 
 .footer-logo {
   align-self: flex-start;
+  padding-bottom: 28px;
 }
 
-.top--level {
+.footer__nav {
   display: flex;
   flex-direction: column;
-  padding: 44px 0 60px 0;
+  padding: 44px 17px 60px 24px;
 }
 
 .footer__list--top,
@@ -284,6 +362,25 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.footer__subhead {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--blue-black);
+}
+
+.contact p,
+ul li {
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--blue-black);
+  cursor: pointer;
+}
+
+ul li:hover {
+  text-decoration: underline;
 }
 
 .bottom__container {
@@ -316,7 +413,7 @@ nav {
   color: var(--blue-black);
 }
 
-.terms h3 {
+.legal h3 {
   font-weight: bold;
   font-size: 16px;
   line-height: 32px;
@@ -325,7 +422,7 @@ nav {
   text-transform: uppercase;
 }
 
-.footer {
+.bottom__line {
   background-image: url("./images/footer-mobile\ .svg");
   height: 76px;
   background-size: cover;
